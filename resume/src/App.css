@@ -1,5 +1,23 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+
+  background-color: cadetblue;
+}
+
+.Chapter {
+  width: 80%;
+  align-items: start;
+}
+
+.ExperienceTitle {
+  font-size: 50px;
+}
+
+.ItemTitle {
+  font-size: 30px;
 }
 
 .App-logo {
