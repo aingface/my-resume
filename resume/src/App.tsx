@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Greetings, OtherExperience, WorkExperience, Skills } from './items';
+import { Greetings, OtherExperience, WorkExperience, Skills, Contact } from './items';
 function App() {
   return (
     <div className="App">
@@ -8,6 +8,7 @@ function App() {
       <WorkExperience />
       <OtherExperience />
       <Skills />
+      <Contact />
     </div>
   );
 }
