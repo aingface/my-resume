@@ -4,7 +4,17 @@ function Contact() {
   return (
     <div className="Chapter">
       <h2 className="ExperienceTitle">Contact</h2>
-      <br />
+      <ul>
+        <li>
+          <a href="mailto:qoeocjf5@gmail.com">이메일</a>
+        </li>
+        <li>
+          <a href="https://aingface.tistory.com/">블로그</a>
+        </li>
+        <li>
+          <a href="https://github.com/aingface">깃허브</a>
+        </li>
+      </ul>
     </div>
   );
 }
