@@ -20,8 +20,12 @@
   font-size: 2rem;
 }
 
-.DetailTitle {
+.ProjectTitle {
   font-size: 1.5rem;
+}
+
+.DetailTitle {
+  font-size: 1.3rem;
 }
 
 .App-logo {
