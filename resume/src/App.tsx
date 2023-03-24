@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
-import { Greetings, OtherExperience, WorkExperience } from './items';
+import { Greetings, OtherExperience, WorkExperience, Skills } from './items';
 function App() {
   return (
     <div className="App">
       <Greetings />
-      <OtherExperience />
       <WorkExperience />
+      <OtherExperience />
+      <Skills />
     </div>
   );
 }
