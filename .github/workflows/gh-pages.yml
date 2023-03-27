@@ -6,32 +6,31 @@ on:
       - "main"
 
 jobs:
-  deploy: name:'build & Deploy'
-  runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
 
-  steps:
-    - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ secrets.NODE_VERSION }}
 
-    - name: Use Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ secrets.NODE_VERSION }}
-
-    - name: Cache node modules
-      uses: actions/cache@v2
-      id: cache
-      with:
-        path: node_modules
-        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-        restore-keys: |
+      - name: Cache node modules
+        uses: actions/cache@v2
+        id: cache
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
             ${{ runner.os }}-yarn-
 
-    - name: Install Dependencies
-        if: needs.cache.outputs.cache-hit != 'true'
+      - name: Install Dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
         run: yarn install
 
-    - run: yarn install --immutable --immutable-cache --check-cache
-    - run: yarn build
+      - run: yarn install --immutable --immutable-cache --check-cache
+      - run: yarn build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
