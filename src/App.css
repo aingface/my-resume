@@ -38,8 +38,13 @@
   padding: 40px 0px;
 }
 
+.time {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 1.1;
 }
 h2 {
@@ -64,6 +69,14 @@ p {
   line-height: 1.4rem;
 }
 
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem 0;
+  border-bottom: 1px solid #eee;
+}
+
 .row-left {
   -ms-flex-preferred-size: 18rem;
   flex-basis: 18rem;
@@ -76,25 +89,20 @@ p {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  flex-direction: column;
 }
 
-.big-paragraph {
-  font-size: 2rem;
-  line-height: 1.4;
-  font-weight: 500;
+.project {
+  padding: 1.5rem 0;
+}
+
+.project:first-child {
+  padding-top: 0;
 }
 
 .Chapter {
   width: 80%;
   align-items: start;
-}
-
-.ExperienceTitle {
-  font-size: 50px;
-}
-
-.ItemTitle {
-  font-size: 2rem;
 }
 
 .ProjectTitle {
