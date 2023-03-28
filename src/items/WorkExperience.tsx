@@ -15,7 +15,7 @@ function WorkExperience() {
         <div className="row-right">
           <div className="project">
             <h4 className="ProjectTitle">블로그 컨텐츠 개편</h4>
-            <span>
+            <span className="time">
               <time dateTime="2022-12">2022. 12</time> - <time dateTime="2022-12">2022. 12</time>
             </span>
             <h5 className="DetailTitle">설명</h5>
@@ -38,7 +38,10 @@ function WorkExperience() {
 
           <div className="project">
             <h4 className="ProjectTitle">유저 게시판</h4>
-            <time>2022. 09 - 2022. 11</time>
+            <span className="time">
+              <time dateTime="2022-09">2022. 09</time> - <time dateTime="2022-11">2022. 11</time>
+            </span>
+
             <h5 className="DetailTitle">설명</h5>
             <p>
               개인 식물관리 앱에 게시판 기능을 신규로 개발했습니다. 그 결과 유저간 소통할 수 있는
@@ -60,7 +63,10 @@ function WorkExperience() {
 
           <div className="project">
             <h4 className="ProjectTitle">식물등록 과정 간소화</h4>
-            <time>2022. 09 - 2022. 11</time>
+            <span className="time">
+              <time dateTime="2022-08">2022. 08</time> - <time dateTime="2022-08">2022. 08</time>
+            </span>
+
             <h5 className="DetailTitle">설명</h5>
             <p>
               입사 후 처음으로 개발하게 된 업무였습니다. 자신이 관리하고 싶은 식물 프로필을 등록하는
