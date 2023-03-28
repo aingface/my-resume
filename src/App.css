@@ -38,6 +38,10 @@ ul > li:before {
   content: '•';
 }
 
+a {
+  text-decoration: none;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -49,6 +53,12 @@ ul > li:before {
 
 .container {
   padding: 40px 0px;
+}
+
+.big-p {
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: 500;
 }
 
 .time {

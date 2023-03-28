@@ -2,8 +2,8 @@ import React from 'react';
 
 function Contact() {
   return (
-    <div className="Chapter">
-      <h2 className="ExperienceTitle">Contact</h2>
+    <div>
+      <h2>Contact</h2>
       <ul>
         <li>
           <a href="mailto:qoeocjf5@gmail.com">이메일</a>
