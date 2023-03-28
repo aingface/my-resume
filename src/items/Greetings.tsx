@@ -4,12 +4,12 @@ import styled from 'styled-components';
 function Greetings() {
   return (
     <Container>
-      <Title>
+      <h1>
         안녕하세요
         <br />
         FE 개발자 배대철입니다.
         <br />
-      </Title>
+      </h1>
       <Desc>
         컴퓨터 앞에 앉아 있는 것을 좋아해서 개발자가 되었습니다.
         <br />
@@ -31,9 +31,8 @@ const Container = styled.div`
   flex-direction: column;
 `;
 
-const Title = styled.p`
-  font-size: 60px;
-`;
 const Desc = styled.p`
-  font-size: 30px;
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: 500;
 `;
