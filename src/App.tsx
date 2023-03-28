@@ -4,11 +4,13 @@ import { Greetings, OtherExperience, WorkExperience, Skills, Contact } from './i
 function App() {
   return (
     <div className="App">
-      <Greetings />
-      <WorkExperience />
-      <OtherExperience />
-      <Skills />
-      <Contact />
+      <div className="container">
+        <Greetings />
+        <WorkExperience />
+        <OtherExperience />
+        <Skills />
+        <Contact />
+      </div>
     </div>
   );
 }

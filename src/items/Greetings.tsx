@@ -5,8 +5,9 @@ function Greetings() {
   return (
     <Container>
       <Title>
-        안녕하세요 🦊 <br />
-        프론트엔드 개발자 배대철입니다.
+        안녕하세요
+        <br />
+        FE 개발자 배대철입니다.
         <br />
       </Title>
       <Desc>
@@ -14,7 +15,7 @@ function Greetings() {
         <br />
         아이디어 내는 것을 좋아하고 모든 일에 적극적입니다.
         <br />
-        사용자가 편리하게 쓸 수 있는 인터페이스를 만들고 싶습니다.
+        아름답고 쓰기편한 UI를 만들기 위해 고민합니다.
         <br />
       </Desc>
     </Container>
@@ -28,8 +29,6 @@ const Container = styled.div`
   justify-content: center;
   align-items: start;
   flex-direction: column;
-
-  width: 80%;
 `;
 
 const Title = styled.p`
