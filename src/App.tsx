@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import { Greetings, OtherExperience, WorkExperience, Skills, Contact } from './items';
+import { Greetings, OtherExperience, WorkExperience, Skills } from './items';
+import DarkModeToggle from './components/DarkModeToggle';
 function App() {
   return (
     <div className="App">
@@ -9,7 +10,7 @@ function App() {
         <WorkExperience />
         <OtherExperience />
         <Skills />
-        {/* <Contact /> */}
+        <DarkModeToggle />
       </div>
     </div>
   );
