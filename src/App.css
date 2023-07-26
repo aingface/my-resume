@@ -107,10 +107,13 @@ a {
 
 /* DarkModeToggle.css */
 .toggle-container {
-  position: relative;
+  position: absolute;
   display: inline-block;
   width: 60px;
   height: 34px;
+
+  right: 1rem;
+  top: 1rem;
 }
 
 .toggle-container input {
@@ -126,7 +129,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #1e2127;
   border-radius: 34px;
   transition: 0.4s;
 }
@@ -144,25 +147,30 @@ a {
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: #72bef4;
 }
 
 input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-/* Customize the background colors based on data-theme attribute */
+/* Set background colors for light and dark mode */
 [data-theme='light'] {
-  --bg-color: #72bef4;
+  background: linear-gradient(135deg, #72bef4, #91eae4);
+  color: #000000;
 }
 
 [data-theme='dark'] {
-  --bg-color: #111111;
+  background-color: #1e2127;
+  color: #ffffff;
 }
 
-/* Set the background color based on the data-theme attribute */
-html {
-  background-color: var(--bg-color);
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 @media (max-width: 768px) {
