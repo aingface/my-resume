@@ -9,7 +9,7 @@ function App() {
         <WorkExperience />
         <OtherExperience />
         <Skills />
-        <Contact />
+        {/* <Contact /> */}
       </div>
     </div>
   );
