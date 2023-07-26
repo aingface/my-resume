@@ -129,7 +129,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #1e2127;
+  background-color: #ccc;
   border-radius: 34px;
   transition: 0.4s;
 }
@@ -141,7 +141,7 @@ a {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-size: cover;
   border-radius: 50%;
   transition: 0.4s;
 }
@@ -152,12 +152,18 @@ input:checked + .slider {
 
 input:checked + .slider:before {
   transform: translateX(26px);
+  background-image: url('./assets/icon/sun.png');
 }
 
 /* Set background colors for light and dark mode */
 [data-theme='light'] {
   background: linear-gradient(135deg, #72bef4, #91eae4);
   color: #000000;
+}
+
+/* 토글이 꺼진 상태에서 달 모양 이미지 보여주기 */
+[data-theme='light'] .slider:before {
+  background-image: url('./assets/icon/moon.png'); /* 달 모양 이미지를 배경으로 설정 */
 }
 
 [data-theme='dark'] {
