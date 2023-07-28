@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import React from 'react';
+import styles from '../styles/DarkModeToggle.module.css';
 
 const DarkModeToggle: React.FC = () => {
   const [darkMode, setDarkMode] = useState<boolean>(false);
@@ -17,9 +18,9 @@ const DarkModeToggle: React.FC = () => {
   };
 
   return (
-    <label className="toggle-container">
+    <label className={styles.toggleContainer}>
       <input type="checkbox" onChange={toggleDarkMode} checked={darkMode} />
-      <span className="slider round"></span>
+      <span className={styles.slider + ' round'}></span>
     </label>
   );
 };
