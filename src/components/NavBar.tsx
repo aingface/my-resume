@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styles from '../styles/NavBar.module.css';
 import DarkModeToggle from '../components/DarkModeToggle';
 import { Link } from 'react-scroll';
+import { scrollToTop } from '../utils/scrollUtils';
 
 function NavBar() {
   const [scrolling, setScrolling] = useState<boolean>(false);
@@ -23,6 +24,9 @@ function NavBar() {
 
   return (
     <div className={`${styles.Container} ${scrolling ? styles.scrolling : ''}`}>
+      <div className={styles.scrollToTopBtn} onClick={scrollToTop}>
+        aingface
+      </div>
       <div className={styles.MenuWrapper}>
         <Link to="introduce" smooth={true} duration={0}>
           <div>Introduce</div>
@@ -33,8 +37,8 @@ function NavBar() {
         <Link to="otherExperience" smooth={true} duration={0}>
           <div>Other Experience</div>
         </Link>
+        <DarkModeToggle />
       </div>
-      <DarkModeToggle />
     </div>
   );
 }
