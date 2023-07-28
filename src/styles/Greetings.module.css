@@ -1,0 +1,31 @@
+.greetingsContainer {
+  margin-top: 1rem;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid; */
+  /* justify-content: space-between; */
+  /* height: 100vh; */
+  box-sizing: content-box;
+}
+
+.greetingsWrapper {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  line-height: 3.75rem;
+
+  font-weight: 700;
+}
+
+.discription {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: 500;
+}

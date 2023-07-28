@@ -1,0 +1,28 @@
+.profileContainer {
+  position: relative;
+  width: 200px; /* 프로필 사진 너비에 맞게 조절 */
+  height: 200px; /* 프로필 사진 높이에 맞게 조절 */
+  overflow: hidden;
+}
+
+.profileImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  /* border: 3px solid #1e2127; */
+  animation: shape-change 8s infinite;
+}
+
+@keyframes shape-change {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
