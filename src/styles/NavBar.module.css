@@ -1,0 +1,25 @@
+.Container {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+
+  border: 1px solid;
+}
+
+.MenuWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 1px solid brown;
+}
+
+.MenuWrapper div {
+  margin: 0 1rem;
+  font-size: 1rem;
+
+  cursor: pointer;
+}

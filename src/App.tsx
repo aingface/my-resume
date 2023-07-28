@@ -1,16 +1,17 @@
 import React from 'react';
 import './App.css';
-import { Greetings, OtherExperience, WorkExperience, Skills } from './items';
-import DarkModeToggle from './components/DarkModeToggle';
+import NavBar from './components/NavBar';
+import { Greetings, OtherExperience, Skills, WorkExperience } from './items';
+
 function App() {
   return (
     <div className="App">
+      <NavBar />
       <div className="container">
         <Greetings />
         <WorkExperience />
         <OtherExperience />
         <Skills />
-        <DarkModeToggle />
       </div>
     </div>
   );
