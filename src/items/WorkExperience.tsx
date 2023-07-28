@@ -5,7 +5,7 @@ function WorkExperience() {
   return (
     <Element name="projectExperience">
       <section>
-        <h2>직무 경험</h2>
+        <h2>Work Experience</h2>
         <div className="row">
           <div className="row-left">
             <h3>그루우</h3>
@@ -67,8 +67,7 @@ function WorkExperience() {
                 <time dateTime="2022-08">2022. 08</time> - <time dateTime="2022-08">2022. 08</time>
               </span>
               <p>
-                입사 후 첫 업무였습니다. 앱에서 관리하고 싶은 식물 프로필을 등록하는 과정에서
-                불필요한 과정을 생략하는 작업에 참여했습니다. 해당 기능 적용 후 사용자의 식물
+                앱에서 관리할 식물 프로필을 등록할 때 불필요한 과정을 단축했고, 이후 사용자의 식물
                 등록률이 80%대로 상승하게 되었습니다.
               </p>
               <h5 className="DetailTitle">작업 내역</h5>
