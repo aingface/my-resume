@@ -5,16 +5,20 @@
   width: 100%;
   justify-content: flex-end;
 
-  border: 1px solid;
+  height: 3rem;
+
+  /* border: 1px solid; */
+  align-items: center;
+}
+
+.scrolling {
+  background-color: rgba(30, 33, 39, 0.3);
 }
 
 .MenuWrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-
-  border: 1px solid brown;
 }
 
 .MenuWrapper div {
