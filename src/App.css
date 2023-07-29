@@ -21,7 +21,7 @@ h5 {
 
 p {
   margin: 0 0 1.5rem;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   line-height: 1.4rem;
 }
 
@@ -93,11 +93,6 @@ a {
 
 .project:first-child {
   padding-top: 0;
-}
-
-.other {
-  padding: 3rem 0;
-  /* border-bottom: 1px solid #eee; */
 }
 
 @media (max-width: 768px) {
