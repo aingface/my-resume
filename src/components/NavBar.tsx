@@ -32,7 +32,7 @@ function NavBar() {
           <div>Introduce</div>
         </Link>
         <Link to="projectExperience" smooth={true} duration={0}>
-          <div>Project Experience</div>
+          <div>Work Experience</div>
         </Link>
         <Link to="otherExperience" smooth={true} duration={0}>
           <div>Other Experience</div>
