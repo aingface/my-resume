@@ -1,10 +1,10 @@
 import React from 'react';
 import { Element } from 'react-scroll';
-
+import styles from '../styles/WorkExperience.module.css';
 function WorkExperience() {
   return (
     <Element name="projectExperience">
-      <section>
+      <section className={styles.workExperienceContainer}>
         <h2>Work Experience</h2>
         <div className="row">
           <div className="row-left">
