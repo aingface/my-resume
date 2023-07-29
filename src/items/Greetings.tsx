@@ -3,12 +3,14 @@ import { Element } from 'react-scroll';
 import styles from '../styles/Greetings.module.css';
 import ProfilePicture from '../components/ProfilePicture';
 import ContactBar from '../components/ContactBar';
+
+import { Skills } from '../items';
 function Greetings() {
   return (
     <Element name="introduce">
       <div className={styles.greetingsContainer}>
         <div className={styles.greetingsWrapper}>
-          <div>
+          <div className={styles.greetingsTextWrapper}>
             <p className={styles.title}>
               안녕하세요
               <br /> Front-End Engineer
@@ -23,10 +25,11 @@ function Greetings() {
               Clean Code를 작성하기 위해 항상 고민하고 노력합니다.
               <br />
             </p>
+            <ContactBar />
+            <Skills />
           </div>
           <ProfilePicture />
         </div>
-        <ContactBar />
       </div>
     </Element>
   );

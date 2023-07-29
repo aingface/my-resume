@@ -1,0 +1,9 @@
+.skillsContainer {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.skillsTitle {
+  margin-right: 1rem;
+}
