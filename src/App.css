@@ -43,7 +43,7 @@ ul > li:before {
 
 a {
   text-decoration: none;
-  color: black;
+  color: inherit; /* 링크의 색상 제거 */
 }
 
 .App {

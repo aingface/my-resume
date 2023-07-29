@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import styles from '../styles/NavBar.module.css';
-import DarkModeToggle from '../components/DarkModeToggle';
 import { Link } from 'react-scroll';
 import { scrollToTop } from '../utils/scrollUtils';
 import { FaHamburger } from 'react-icons/fa';
@@ -10,7 +9,6 @@ function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    // 스크롤 이벤트 핸들러 등록
     const handleScroll = () => {
       const scrollY = window.scrollY;
       // 스크롤 위치가 0보다 크면(스크롤이 발생하면) 배경 색 변경
@@ -19,7 +17,6 @@ function NavBar() {
 
     window.addEventListener('scroll', handleScroll);
 
-    // 컴포넌트 언마운트 시 이벤트 핸들러 제거
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -41,12 +38,11 @@ function NavBar() {
       </div>
       <div className={`${styles.menuListWrapper} ${isMenuOpen ? styles.open : ''}`}>
         <Link to="projectExperience" smooth={true} duration={0}>
-          <div>Work Experience</div>
+          <div className={styles.NavBarMenuItem}>Work Experience</div>
         </Link>
         <Link to="otherExperience" smooth={true} duration={0}>
-          <div>Other Experience</div>
+          <div className={styles.NavBarMenuItem}>Other Experience</div>
         </Link>
-        <DarkModeToggle />
       </div>
       <div className={styles.hamburgerIcon}>
         <FaHamburger

@@ -3,6 +3,7 @@ import './App.css';
 import NavBar from './components/NavBar';
 import { Greetings, OtherExperience, WorkExperience } from './items';
 import Footer from './components/Footer';
+import DarkModeToggle from './components/DarkModeToggle';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <WorkExperience />
         <OtherExperience />
       </div>
-
+      <DarkModeToggle />
       <Footer />
     </div>
   );
