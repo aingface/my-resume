@@ -28,9 +28,6 @@ function NavBar() {
         aingface
       </div>
       <div className={styles.MenuWrapper}>
-        <Link to="introduce" smooth={true} duration={0}>
-          <div>Introduce</div>
-        </Link>
         <Link to="projectExperience" smooth={true} duration={0}>
           <div>Work Experience</div>
         </Link>
