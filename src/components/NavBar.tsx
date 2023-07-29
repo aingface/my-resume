@@ -3,9 +3,12 @@ import styles from '../styles/NavBar.module.css';
 import DarkModeToggle from '../components/DarkModeToggle';
 import { Link } from 'react-scroll';
 import { scrollToTop } from '../utils/scrollUtils';
-
+import { FaHamburger } from 'react-icons/fa';
+import { ImCancelCircle } from 'react-icons/im';
 function NavBar() {
   const [scrolling, setScrolling] = useState<boolean>(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   useEffect(() => {
     // 스크롤 이벤트 핸들러 등록
     const handleScroll = () => {
@@ -22,12 +25,21 @@ function NavBar() {
     };
   }, []);
 
+  const handleMenuToggle = () => {
+    console.log('햄버거 버튼 누름, 상태:', isMenuOpen);
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <div className={`${styles.Container} ${scrolling ? styles.scrolling : ''}`}>
+    <nav
+      className={`${styles.container} ${scrolling ? styles.scrolling : ''} ${
+        isMenuOpen ? styles.open : ''
+      }`}
+    >
       <div className={styles.scrollToTopBtn} onClick={scrollToTop}>
         aingface
       </div>
-      <div className={styles.MenuWrapper}>
+      <div className={`${styles.menuListWrapper} ${isMenuOpen ? styles.open : ''}`}>
         <Link to="projectExperience" smooth={true} duration={0}>
           <div>Work Experience</div>
         </Link>
@@ -36,7 +48,19 @@ function NavBar() {
         </Link>
         <DarkModeToggle />
       </div>
-    </div>
+      <div className={styles.hamburgerIcon}>
+        <FaHamburger
+          size={25}
+          onClick={handleMenuToggle}
+          className={`${styles.faHamburger} ${isMenuOpen ? styles.open : ''}`}
+        />
+        <ImCancelCircle
+          size={25}
+          onClick={handleMenuToggle}
+          className={`${styles.imCancelCircle} ${isMenuOpen ? '' : styles.close}`}
+        />
+      </div>
+    </nav>
   );
 }
 
